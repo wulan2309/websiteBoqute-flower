@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Bouquet</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f3ff; /* Background ungu pastel lembut */
+            color: #333;
+        }
+        header {
+            background-color: #a394f7; /* Ungu pastel */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #c5b8f7; /* Ungu pastel sedikit lebih gelap */
+            padding: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #ece3ff; /* Ungu muda */
+        }
+        .section {
+            padding: 30px;
+            text-align: center;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 20px;
+            align-items: center;
+        }
+        .description {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            margin-right: 20px;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .description h2 {
+            color: #8561c5; /* Ungu lebih gelap */
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        .description p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .image-container {
+            flex: 1.5;
+            background-color: #e8ddf8; /* Latar ungu pastel lembut */
+            border-radius: 10px;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container a {
+            background-color: #8561c5; /* Tombol ungu */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .button-container a:hover {
+            background-color: #6c4ea8; /* Tombol ungu lebih gelap */
+        }
+        /* Bagian toko */
+        #shop {
+            padding: 50px;
+            background-color: #f3edfc; /* Latar belakang ungu muda */
+            text-align: center;
+        }
+        .shop-item {
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+            background-color: #ece4f9; /* Latar ungu pastel */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .shop-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .price {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #8561c5; /* Harga berwarna ungu */
+        }
+        /* Styling Form Login */
+        .login-form {
+            background-color: #fff; /* Kotak login kembali ke putih */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-top: 20px; /* Kotak login dipindahkan lebih ke atas */
+            width: 100%;
+            max-width: 400px;
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #8561c5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .login-form button:hover {
+            background-color: #6c4ea8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Flower Bouquet</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#shop">Shop</a>
+        <a href="#account">Account</a>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="home" class="section">
+        <h2 style="font-size: 28px; color: #6c4ea8;">Ciptakan Momen Tak Terlupakan!</h2>
+        <p style="font-size: 18px; color: #333;">Berikan kejutan romantis dengan koleksi bunga terbaik kami.</p>
+    </div>
+
+    <!-- Form Login -->
+    <div class="section">
+        <div class="login-form">
+            <h3 style="color: #333;">Login untuk Melanjutkan</h3>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Nama Anda" required>
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="section">
+        <h2 style="font-size: 32px; font-weight: bold; color: #8561c5;">Hello Everyone!</h2>
+        <div class="main-content">
+            <div class="description">
+                <p>
+                    Kami sangat senang Anda telah mengunjungi website kami! Jika Anda sedang mencari kejutan romantis yang sempurna, Anda berada di tempat yang tepat.
+                </p>
+                <p>
+                    Kami menyediakan berbagai pilihan bouquet bunga indah untuk semua kesempatan spesial.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="purple.tulip.jpg" alt="Flower Bouquet">
+            </div>
+        </div>
+        <!-- Tombol 'Lihat Koleksi' dipindahkan ke bawah -->
+        <div class="button-container">
+            <a href="#shop">Lihat Koleksi</a>
+        </div>
+    </div>
+
+    <!-- Shop Section -->
+    <div id="shop" class="section">
+        <h2 style="color: #8561c5;">Explore Our Bouquets</h2>
+        <!-- Tambahkan produk di sini -->
+        <div class="shop-item">
+            <img src="flower.png.jpg" alt="Bouquet 1">
+            <p class="price">$20</p>
+        </div>
+        <div class="shop-item">
+            <img src="flower2.jpg" alt="Bouquet 2">
+            <p class="price">$25</p>
+        </div>
+        <div class="shop-item">
+            <img src="flower3.jpg" alt="Bouquet 3">
+            <p class="price">$25</p>
+        </div>
+        <div class="shop-item">
+            <img src="flower4.jpg" alt="Bouquet 4">
+            <p class="price">$25</p>
+        </div>
+        <div class="shop-item">
+            <img src="flower5.jpg" alt="Bouquet 5">
+            <p class="price">$25</p>
+        </div>
+        <div class="shop-item">
+           <img src="flower6.jpg" alt="Bouquet 6">
+           <p class="price">$25</p>
+        </div>
+        <div class="shop-item">
+           <img src="flower7.jpg" alt="Bouquet 7">
+           <p class="price">$25</p>
+        </div>
+        <div class="shop-item">
+           <img src="flower8.jpg" alt="Bouquet 8">
+           <p class="price">$25</p>
+    </div>
+
+</body>
+</html>
